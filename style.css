@@ -1,0 +1,354 @@
+/*
+Theme Name: site
+Theme URL: http://localhost:8888/wordpress/wp-content/site/
+Description: wordpressのテーマ作成例です。
+Author: Hayakawa
+Version: 1.0
+*/
+
+/* リセット */
+body,ul,li,p,h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+/* 記述ルール */
+/* 参照    https://qiita.com/mgn/items/6154ccd2e23b2e65c769 */
+/* Suggested order:
+ * display
+ * list-style
+ * position
+ * float
+ * clear
+ * width
+ * height
+ * margin
+ * padding
+ * border
+ * background
+ * color
+ * font
+ * text-decoration
+ * text-align
+ * vertical-align
+ * white-space
+ * other text
+ * content
+ *
+ */
+
+a {
+    text-decoration: none;
+    color:  #8BCBCB;
+}
+
+li {
+    list-style: none;
+}
+
+.clear {
+    float: none;
+}
+
+
+/* common */
+h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* header.php */
+header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    background-color:white;
+}
+
+.logo {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color:  #8BCBCB;
+}
+
+.logo-letter {
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.eng-letter {
+    font-size: 18px;
+}
+
+nav {
+    float: left;
+}
+nav ul {
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 170px;
+}
+nav li {
+    display: inline-block;
+    margin-right: 18px;
+    border-bottom:solid 0.5px rgb(148, 146, 146);
+    font-weight: bold;
+    color:  #8BCBCB;
+}
+
+/* index.php body要素 */
+.top-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(assets/top-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+.msg-wrapper {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.msg {
+    letter-spacing: 1.5px;
+}
+
+/* index.php 最新情報 */
+.article-wrapper {
+    width: 100%;
+    height: 300px;
+    margin-top: 60px;
+}
+
+.news-header-msg {
+    margin: 40px 0 15px 0;
+    text-align: center;
+}
+
+.news-header-msg h2{
+    color:  #8BCBCB;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.news-cell {
+    width: 200px;
+    height: 300px;
+    margin-right:20px;
+    padding: 15px 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* footer.php */
+footer {
+    width: 100%;
+    height: 150px;
+    margin-top: 150px;
+    background-color:  #3B4B7E;
+}
+
+footer, footer .logo  {
+    color: white;
+}
+
+/* page.php (固定ページ) */
+.page-title-wrapper {
+    width: 100%;
+    height: 150px;
+    background-color: lightskyblue;
+}
+
+.page-title {
+    width: 100%;
+    height: 100px;
+    margin: 35px 0 40px 0;
+    padding-top: 30px;
+    border-top: 1px solid lightblue; 
+    border-bottom: 1px solid lightblue; 
+    text-align: center;
+}
+
+.page-title h2 {
+    color:  #8BCBCB;
+    font-size: 35px;
+}
+/* page.php内のhtmlを操作するための親要素 */
+.content-wrapper {
+    width: 100%;
+}
+
+.googlemap {
+    display: block;
+    width: 90%;
+    height: 500px;
+    margin: 15px auto 0;
+}
+
+.content-wrapper h4 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content-wrapper table {
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+.content-wrapper td{
+    letter-spacing: .5px;
+}
+
+/* ダッシュボード　カスタムHTMLにて追加要素 */
+.time-exception {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.introduction{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.introduction p {
+    margin: 10px 0 ;
+}
+
+.introduction img {
+    border-radius: 5px;
+}
+
+.introduction h5 {
+    margin: 30px 0 ;
+    color: #ff6600;
+    letter-spacing: .5px;
+}
+
+/* single.php */
+.content-wrapper .background{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: rgb(245, 222, 212);
+    opacity: 0.7;
+}
+
+.content-wrapper .content {
+    width: 70%;
+    margin: 0 auto;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+
+.content-wrapper .link-wrapper {
+    width: 80%;
+    margin: 100px auto 0px;
+    border-top: 1px splid lightgray;
+}
+
+/* bootstrapでレスポンシブ対応できない箇所を個別に記述対応 */
+/* header.php */
+/*  - nav生成箇所 */
+
+@media screen and (max-width: 544px) {
+    /* 544(Bootstrapのxs規格)px以下に適用されるCSS（スマホ用） */
+    header {
+        height:60px;
+        padding-top: 5px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .logo-letter {
+        font-size: 25px;
+    }
+
+    .eng-letter {
+        font-size: 12px;
+    }
+
+    nav ul{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    nav li  {
+        width: 100%;
+        height: 23px;
+        margin-right: 0;
+        letter-spacing: 0.5px;
+        color: rgb(80, 80, 80);
+    }
+
+    /* body要素 */
+    .top-img {
+        height: 200px;
+        margin-top: 100px;
+    }
+    /* body */
+    .article-wrapper {
+        margin-top:100px;
+    }
+
+    .msg-wrapper {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .msg {
+        letter-spacing: .5px;
+    }
+
+    .article-wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .news-cell {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* page.php */
+    .page-title {
+        margin-top: 100px;
+    }
+    
+    .content-wrapper {
+        width: 90%;
+        margin: 0 auto; 
+    }
+
+    .content-wrapper img {
+        width: 250px;
+        height: 200px;
+    }
+
+    .content-wrapper p {
+        overflow-wrap: break-word;
+    }
+
+    /* page.php */
+    /* ダッシュボード　カスタムHTMLにて追加要素 */
+    .googlemap {
+        height: 400px;
+    }
+
+}
+
