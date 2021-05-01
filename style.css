@@ -95,6 +95,49 @@ nav li {
     color:  #8BCBCB;
 }
 
+.hum-btn {
+    display: none;
+    position: fixed;
+    top: 40px;
+    right: 10px;
+    z-index: 999;
+    background-color:#3B4B7E;
+    cursor: pointor;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    text-align: center;
+}
+
+.hum-btn span{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+    border-radius: 3px;
+}
+
+.fadeDown {
+    animation-name: fadeDownAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: block;
+}
+
+@keyframes fadeDownAnime {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* index.php body要素 */
 .top-img {
     position: relative;

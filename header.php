@@ -45,5 +45,7 @@
                 ?>
             </nav>
             </div>
+            <!-- ハンバーガーメニュー -->
+            <div class="hum-btn"><span class="fa fa-bars"></span></div>
         </header>
         <div class="clear"></div>
