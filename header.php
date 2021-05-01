@@ -41,7 +41,6 @@
                     'container' => 'false',
                 );
                 // パラメータを引数としてセット
-                var_dump($args);
                 wp_nav_menu($args);
                 ?>
             </nav>
