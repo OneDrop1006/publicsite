@@ -3,7 +3,12 @@
 
 <!-- home画面の場合分岐処理 -->
 <?php if(is_home()): ?>
+<!-- TODO トップイメージのスライドショー化kmn　 -->
     <div class="top-img">
+        <ul class="slider">
+            <li class="slider-item item1"></li>
+            <li class="slider-item item2"></li>
+        </ul>
         <div class="msg-wrapper">
             <p class="msg">食べる時も、</p>
             <p>笑う時も、</p>
