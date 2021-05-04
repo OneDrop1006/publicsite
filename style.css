@@ -95,6 +95,7 @@ nav li {
     color:  #8BCBCB;
 }
 
+/* ハンバーガーメニュー */
 .hum-btn {
     display: none;
     position: fixed;
@@ -119,6 +120,22 @@ nav li {
     border-radius: 3px;
 }
 
+.hum-btn-activate {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 200px;
+    height: 150px;
+    background-color: lightgray;
+    opacity: 0.8;
+    z-index: 99;
+}
+
+.hum-btn-menu {
+    margin-left: 0;
+}
+
+/* スライドショー */
 .fadeDown {
     animation-name: fadeDownAnime;
     animation-duration: 0.5s;
@@ -342,6 +359,18 @@ footer, footer .logo  {
         margin-right: 0;
         letter-spacing: 0.5px;
         color: rgb(80, 80, 80);
+    }
+
+    /* ハンバーガーメニュー */
+    .hum-btn-activate {
+        position: fixed;
+        right: 10px;
+        top: 40px;
+        width: 200px;
+        height: 100px;
+        padding-top: 20px;
+        background-color: rgb(230, 230, 230);
+        opacity: .8;
     }
 
     /* body要素 */

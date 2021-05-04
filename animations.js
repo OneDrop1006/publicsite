@@ -4,8 +4,12 @@ function switchClasses() {
     var scroll = $(window).scrollTop();
     if ( scroll >= headerH) {
         $('.hum-btn').addClass('fadeDown');
+        $('#nav-menu').removeClass('hum-btn-activate');
+        $('#menu-global-navigation').addClass('hum-btn-menu');
     } else {
         $('.hum-btn').removeClass('fadeDown');
+        $('#menu-global-navigation').removeClass('hum-btn-menu');
+
     }
 }
 
@@ -13,6 +17,12 @@ function switchClasses() {
 $(window).scroll(function(){
     switchClasses();
 });
+
+// ハンバーガーメニュー押下時のアクション
+$('.hum-btn').click(function(){
+    $('#nav-menu').toggleClass('hum-btn-activate');
+    $('.hum-btn').toggleClass('fadeDown');
+})
 
 //////////////////////////////
 
