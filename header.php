@@ -36,7 +36,7 @@
                 </a>
             </div>
             <!-- navの有効化/functions.phpでは設定済み TODO 画面確認 -->
-            <nav class="col-xs-12 col-lg-8">
+            <nav id="nav-menu" class="col-xs-12 col-lg-8">
                 <?php
                 $args = array(
                     'menu' => 'global-navigation',
@@ -49,6 +49,8 @@
             </nav>
             </div>
             <!-- ハンバーガーメニュー -->
-            <div class="hum-btn"><span class="fa fa-bars"></span></div>
+            <div class="hum-btn">
+                <span class="fa fa-bars"></span>
+           </div>
         </header>
         <div class="clear"></div>
