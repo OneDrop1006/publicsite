@@ -6,10 +6,10 @@ function switchClasses() {
         $('.hum-btn').addClass('fadeDown');
         $('#nav-menu').removeClass('hum-btn-activate');
         $('#menu-global-navigation').addClass('hum-btn-menu');
+        $('.close-btn').removeClass('close-btn-active');
     } else {
         $('.hum-btn').removeClass('fadeDown');
         $('#menu-global-navigation').removeClass('hum-btn-menu');
-
     }
 }
 
@@ -22,7 +22,14 @@ $(window).scroll(function(){
 $('.hum-btn').click(function(){
     $('#nav-menu').toggleClass('hum-btn-activate');
     $('.hum-btn').toggleClass('fadeDown');
+    $('.close-btn').toggleClass('close-btn-active');
 })
+
+$('.close-btn').click(function(){
+    $('#nav-menu').toggleClass('hum-btn-activate');
+    $('.hum-btn').toggleClass('fadeDown');
+    $('.close-btn').toggleClass('close-btn-active');
+});
 
 //////////////////////////////
 
