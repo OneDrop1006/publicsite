@@ -52,5 +52,9 @@
             <div class="hum-btn">
                 <span class="fa fa-bars"></span>
            </div>
+           <div class=close-btn>
+               <i class="fas fa-times"></i>
+           </div>
         </header>
         <div class="clear"></div>
+   

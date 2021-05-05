@@ -135,6 +135,24 @@ nav li {
     margin-left: 0;
 }
 
+
+
+.close-btn {
+    display: none;
+    width: 20px;
+    height: 20px;
+    color: black;
+}
+
+.close-btn-active {
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    top: 25px;
+    z-index:999;
+    opacity: .8;
+}
+
 /* スライドショー */
 .fadeDown {
     animation-name: fadeDownAnime;
@@ -372,6 +390,12 @@ footer, footer .logo  {
         background-color: rgb(230, 230, 230);
         opacity: .8;
     }
+
+    .close-btn-active {
+        right: 10px;
+        top: 45px;
+    }
+    
 
     /* body要素 */
     .top-img {
